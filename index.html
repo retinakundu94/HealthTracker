@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Tracker</title>
     <script defer src="index.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     </head>
     <body>
         <div class="container">
             <h1>Health & Fitness Exercises</h1>
             <div>
+                <label for="exerciseCategory">Select Category:</label>
+                <select id="exerciseCategory">
+                    <option value="Strength">Strength</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Balance">Balance</option>
+                    <option value="Flexibility">Flexibility</option>
+                </select>
+                <div id="exerciseList"></div>
+                <button id="refreshButton">Refresh</button>
+                <input type="text" id="searchInput" placeholder="Search">
+                
+            </div>
+        </div>
 
     </body>
-
-</html>
+    </html>
